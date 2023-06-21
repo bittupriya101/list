@@ -1,0 +1,21 @@
+from turtle import *
+
+speed('fastest')
+
+# polygon
+distance = 100
+sides = 6
+
+for i in range(sides):
+    pencolor('red')
+    fd(distance)
+    rt(360/sides)
+    circle(distance/2)
+    for i in range(sides):
+        pencolor('blue')
+        fd(distance/2)
+        rt(360/sides)
+        dot(10)
+        write(i)
+hideturtle()
+mainloop() #This line is needed to keep the window open
